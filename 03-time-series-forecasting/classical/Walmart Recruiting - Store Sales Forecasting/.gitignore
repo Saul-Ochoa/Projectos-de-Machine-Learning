@@ -1,0 +1,47 @@
+# Entornos
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datos (no subir CSVs pesados a git, se regeneran con src/data/*.py)
+data/1.raw/*.csv
+data/2.processed/*.csv
+data/3.final/*.csv
+!data/1.raw/.gitkeep
+!data/2.processed/.gitkeep
+!data/3.final/.gitkeep
+
+# Modelos entrenados (pesados, se regeneran con src/models/train_model.py)
+models/**/*.pkl
+models/**/*.txt
+models/**/*_final.json
+models/archive/
+!models/**/features_*.json
+!models/.gitkeep
+
+# Predicciones / submissions generadas
+output/*.csv
+!output/.gitkeep
+
+# Red de seguridad: ningún CSV debería versionarse en este proyecto
+# (los .gitkeep de arriba siguen permitidos por las reglas negativas anteriores)
+*.csv
+
+# Tests / cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# Sistema
+.DS_Store
+.env
+.vscode/
+.idea/

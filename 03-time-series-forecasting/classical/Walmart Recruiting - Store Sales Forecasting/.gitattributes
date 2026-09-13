@@ -1,0 +1,9 @@
+# Por ahora los .pkl/.txt de models/ están en .gitignore (no se versionan).
+# Si en el futuro se decide versionar modelos entrenados, activar Git LFS:
+#   git lfs install
+#   git lfs track "models/**/*.pkl"
+#   git lfs track "models/**/*.txt"
+#   git add .gitattributes
+# y quitar las reglas correspondientes de .gitignore antes de hacer `git add models/`.
+models/**/*.pkl filter=lfs diff=lfs merge=lfs -text
+models/**/*.txt filter=lfs diff=lfs merge=lfs -text

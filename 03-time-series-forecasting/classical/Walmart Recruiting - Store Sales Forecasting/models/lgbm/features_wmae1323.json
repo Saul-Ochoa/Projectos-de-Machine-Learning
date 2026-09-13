@@ -1,0 +1,14 @@
+[
+  "Store",
+  "Dept",
+  "Size",
+  "month",
+  "IsHoliday",
+  "MarkDown_Total",
+  "MarkDown_Count",
+  "lag_1",
+  "lag_4",
+  "lag_52",
+  "roll_mean_4",
+  "roll_mean_52"
+]
