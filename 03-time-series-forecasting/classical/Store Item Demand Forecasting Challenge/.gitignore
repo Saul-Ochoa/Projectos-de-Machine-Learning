@@ -1,0 +1,33 @@
+# Python / venv
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# Datos grandes - NO SUBIR
+data/1.raw/
+data/2.processed/*
+data/3.final/*.csv
+data/3.final/*.parquet
+/models/
+catboost_info/
+/output/
+*.pkl
+*.cbm
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Excepciones: archivos pequeños de ejemplo/documentación dentro de data/
+!data/3.final/README.md
+!data/2.processed/README.md
