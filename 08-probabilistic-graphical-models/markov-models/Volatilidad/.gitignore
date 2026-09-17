@@ -1,2 +1,4 @@
 outputs/
+!outputs/*.png
+!outputs/*.jpg
 *.csv
